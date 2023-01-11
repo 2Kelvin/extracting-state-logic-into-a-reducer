@@ -19,8 +19,8 @@ In this documentation read, I learnt:
 - to use useReducer, you have to import it just like other hooks
 - just like useState, `usereducer() hook definition is an array of an initial state and a dispatch function to set the state`. i.e. it returns: `a stateful value` & `a dispatch function` to disptch actions to the reducer
 - `useReducer` hook takes two arguments:
-  - 1. a reducer function
-  - 2. an initial state (value)
+  1.  a reducer function
+  2.  an initial state (value)
 - 2 important tips on reducers:
   - [x] reducers must be pure : they should not perform any calculations outside the component during rendering & should update objects & arrays without mutating them
   - [x] each action describes a single user interaction even if it leads to multiple changes in data
