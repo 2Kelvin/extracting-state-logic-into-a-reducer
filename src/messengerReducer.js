@@ -28,7 +28,10 @@ export function messengerReducer(state, action) {
     case "sent_message": {
       return {
         ...state,
-        message: "",
+        messages: {
+          ...state.messages,
+          [state.selectedId]: "",
+        },
       };
     }
     default: {

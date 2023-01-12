@@ -27,7 +27,7 @@ export function messengerReducer(state, action) {
     case "sent_message":
       {
         return Object.assign({}, state, {
-          message: ""
+          messages: Object.assign({}, state.messages, _defineProperty({}, state.selectedId, ""))
         });
       }
     default:
