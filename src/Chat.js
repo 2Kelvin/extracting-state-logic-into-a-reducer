@@ -18,9 +18,7 @@ export default function Chat({ message, contact, dispatch }) {
         className="bg-orange-300 py-2 px-4 my-1 rounded-lg active:bg-orange-500 w-fit shadow-xl border-2 border-solid"
         onClick={() => {
           if (message !== "") {
-            // alert with user.email & message
             alert(message + " (Receiver: " + contact.email + ")");
-            // clear textarea
             dispatch({
               type: "sent_message",
               message: "",

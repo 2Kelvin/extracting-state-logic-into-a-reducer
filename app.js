@@ -12,7 +12,7 @@ function Messenger() {
       state = _React$useReducer2[0],
       dispatch = _React$useReducer2[1];
 
-  var message = state.message;
+  var message = state.messages[state.selectedId];
   var contact = contacts.find(function (c) {
     return c.id === state.selectedId;
   });

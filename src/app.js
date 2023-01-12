@@ -10,7 +10,7 @@ const contacts = [
 
 function Messenger() {
   const [state, dispatch] = React.useReducer(messengerReducer, initialState);
-  const message = state.message;
+  const message = state.messages[state.selectedId];
   const contact = contacts.find((c) => c.id === state.selectedId);
 
   return (
