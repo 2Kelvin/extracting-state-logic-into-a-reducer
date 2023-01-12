@@ -4,7 +4,7 @@ In this documentation read, I learnt:
 
 - to use a `reducer function` & `useReducer()`
 - use a reducer to contain all the state of a complex component. Define the reducer function outside your component and move all the component's state into it.
-- `reducers are a different way to handle state`
+- just like useState, reducers are another way of handling state
 - `3 steps of migrating from useState to useReducer`:
   - [x] move from setting state to dispatching actions
   - [x] write a reducer function

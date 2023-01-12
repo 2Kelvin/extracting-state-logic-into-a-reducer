@@ -5,16 +5,22 @@ export default function ContactList(_ref) {
 
   return React.createElement(
     "ul",
-    null,
+    { className: "flex flex-col mr-10" },
     contacts.map(function (contact) {
-      React.createElement(
+      return React.createElement(
         "li",
         { key: contact.id },
         React.createElement(
           "button",
           {
+            className: "bg-blue-500 p-2 mb-2 rounded active:bg-blue-400 w-24 shadow-xl",
             onClick: function onClick() {
               // do something here with the dispatch action, 'changed_selection
+              dispatch({
+                type: "changed_selection",
+                id: selectedId
+                // message: "",
+              });
             }
           },
           selectedId === contact.id ? React.createElement(

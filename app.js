@@ -19,7 +19,7 @@ function Messenger() {
 
   return React.createElement(
     "div",
-    null,
+    { className: "flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-10 bg-white" },
     React.createElement(ContactList, {
       contacts: contacts,
       selectedId: state.selectedId,
@@ -35,7 +35,11 @@ function Messenger() {
 }
 
 export default function App() {
-  return React.createElement(Messenger, null);
+  return React.createElement(
+    "div",
+    { className: "grid place-content-center h-screen bg-slate-100" },
+    React.createElement(Messenger, null)
+  );
 }
 
 var root = ReactDOM.createRoot(document.getElementById("rootNode"));

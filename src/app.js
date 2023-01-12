@@ -14,7 +14,7 @@ function Messenger() {
   const contact = contacts.find((c) => c.id === state.selectedId);
 
   return (
-    <div>
+    <div className="flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-10 bg-white">
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}
@@ -31,7 +31,11 @@ function Messenger() {
 }
 
 export default function App() {
-  return <Messenger />;
+  return (
+    <div className="grid place-content-center h-screen bg-slate-100">
+      <Messenger />
+    </div>
+  );
 }
 
 const root = ReactDOM.createRoot(document.getElementById("rootNode"));
