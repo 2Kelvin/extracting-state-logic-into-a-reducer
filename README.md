@@ -1,5 +1,7 @@
 # extracting-state-logic-into-a-reducer
 
+![useReducer](https://user-images.githubusercontent.com/85868026/212066216-d210d88a-8ee0-43bd-b523-cecd40e1d733.png)
+
 In this documentation read, I learnt:
 
 - to use a `reducer function` & `useReducer()`
