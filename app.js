@@ -19,7 +19,7 @@ function Messenger() {
 
   return React.createElement(
     "div",
-    { className: "flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-10 bg-white" },
+    { className: "flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-12 bg-white" },
     React.createElement(ContactList, {
       contacts: contacts,
       selectedId: state.selectedId,

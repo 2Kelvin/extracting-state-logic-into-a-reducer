@@ -14,7 +14,7 @@ function Messenger() {
   const contact = contacts.find((c) => c.id === state.selectedId);
 
   return (
-    <div className="flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-10 bg-white">
+    <div className="flex justify-evenly w-fit items-center border border-blue-300 shadow-lg rounded-xl p-12 bg-white">
       <ContactList
         contacts={contacts}
         selectedId={state.selectedId}

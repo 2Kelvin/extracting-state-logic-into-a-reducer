@@ -6,11 +6,9 @@ export default function ContactList({ contacts, selectedId, dispatch }) {
           <button
             className="bg-blue-500 p-2 mb-2 rounded active:bg-blue-400 w-24 shadow-xl"
             onClick={() => {
-              // do something here with the dispatch action, 'changed_selection
               dispatch({
                 type: "changed_selection",
-                id: selectedId,
-                // message: "",
+                contactId: contact.id,
               });
             }}
           >

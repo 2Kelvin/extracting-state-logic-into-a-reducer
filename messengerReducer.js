@@ -15,6 +15,12 @@ export function messengerReducer(state, action) {
           message: action.message
         });
       }
+    case "sent_message":
+      {
+        return Object.assign({}, state, {
+          message: ""
+        });
+      }
     default:
       {
         throw Error("Unknown action: " + action.type);
